@@ -7,6 +7,7 @@ public class JavaVersion {
         // Java Runtime Version
         System.out.println("Java Runtime Version : "+ System.getProperty("java.runtime.version"));
         // Java URL Version
-        System.out.println("Java URL Version: "+System.getProperty("java.net.url"));
+        System.out.println("Java URL Version: "+System.getProperty("java.vendor.url"));
+        // Java 
     }       
 }
