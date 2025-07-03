@@ -3,10 +3,12 @@ import java.util.Scanner;
 public class sumOfdigits {
    static int sum=0;
   public static int Sum(int number,int num){
-   if(num<0){
+   if(num==0){
     return sum;
    }
-   return Sum(number, num%10)+Sum(number, num/10);
+    sum+=num%10;
+    Sum(number, num/10);
+    return sum;
   }  
   public static void main(String[] args) {
     Scanner sc=new Scanner(System.in);
