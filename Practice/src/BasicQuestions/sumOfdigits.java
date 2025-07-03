@@ -4,7 +4,7 @@ public class sumOfdigits {
    static int sum=0;
   public static int Sum(int num){
    if(num==0){
-    return sum;
+    return 0;
    }
     return (num%10)+Sum(num/10);
   }  
