@@ -14,26 +14,25 @@ public class countTheString {
                 number++;
             }
 
-            if (Character.isWhitespace(c)) {
+            else if (Character.isWhitespace(c)) {
                 space++;
-            }
-            if (Character.isLetter(c)) {
+            } else if (Character.isLetter(c)) {
                 count++;
             } else {
                 special++;
             }
         }
 
-        System.out.println(count);
-        System.out.println(number);
-        System.out.println(space);
-        System.out.println(special);
+        System.out.println("Word: " + count);
+        System.out.println("Digit: " + number);
+        System.out.println("Space: " + space);
+        System.out.println("Special value: " + special);
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String");
-        String str=sc.nextLine();
+        String str = sc.nextLine();
         Count(str);
     }
 
