@@ -7,23 +7,34 @@ public class countTheString {
 
     public static void Count(String str) {
         // if(str.length()==0){
-        //     return;
+        // return;
         // }
-        for(char c:str.toCharArray()){
-            if(Character.isDigit(c)){
+        for (char c : str.toCharArray()) {
+            if (Character.isDigit(c)) {
                 number++;
             }
 
-            if(Character.isWhitespace(c)){
+            if (Character.isWhitespace(c)) {
                 space++;
             }
-            if(Character.isLetter(c)){
+            if (Character.isLetter(c)) {
                 count++;
-            }
-            else{
+            } else {
                 special++;
             }
         }
+
+        System.out.println(count);
+        System.out.println(number);
+        System.out.println(space);
+        System.out.println(special);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the String");
+        String str=sc.nextLine();
+        Count(str);
     }
 
 }
