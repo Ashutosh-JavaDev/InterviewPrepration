@@ -1,5 +1,5 @@
 package BasicQuestions;
-
+import java.util.Scanner;
 public class primeNumber {
     static boolean res = false;
     static int value = 0;
@@ -20,5 +20,8 @@ public class primeNumber {
             res=false;
         }
         return res;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
     }
 }
