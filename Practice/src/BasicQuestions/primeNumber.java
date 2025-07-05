@@ -6,11 +6,19 @@ public class primeNumber {
 
     public static boolean count(int num, int i) {
         if (i == num) {
-            return true;
+            return res;
         } else {
             if (num % i == 0) {
                 value++;
             }
+            count(num, i+1);
         }
+        if(value==2){
+            res=true;
+        }
+        else{
+            res=false;
+        }
+        return res;
     }
 }
