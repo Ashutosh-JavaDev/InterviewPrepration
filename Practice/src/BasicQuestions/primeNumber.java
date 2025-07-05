@@ -23,6 +23,7 @@ public class primeNumber {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        count(29, 1);
+      boolean res=  count(29, 1);
+      System.out.println("Result: "+res);
     }
 }
