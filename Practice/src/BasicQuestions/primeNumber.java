@@ -1,8 +1,13 @@
 package BasicQuestions;
 
 public class primeNumber {
-    static int res=0;
-    public static int count(int num){
-         
+    static boolean res=false;
+    public static boolean count(int num,int i){
+         if(num==1){
+            return true;
+         }
+         else if(num%i==0){
+
+         }
     }
 }
