@@ -13,4 +13,11 @@ public class FibonacciSeries {
             System.out.print(c +" ");
         }
     }
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the size of the list");
+        int num=sc.nextInt();
+        Sequence(num, 0, 1);
+        System.out.println();
+    }
 }
