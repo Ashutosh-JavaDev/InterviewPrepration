@@ -30,7 +30,9 @@ public class primeNumber {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        boolean res = count(21, 1);
+        System.out.println("Enter the Number: ");
+        int num=sc.nextInt();
+        boolean res = count(num, 1);
         System.out.println("Result: " + res);
     }
 }
