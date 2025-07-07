@@ -19,11 +19,12 @@ public class primeNumber {
         else{
             res=false;
         }
+        System.out.println("Value: "+value);
         return res;
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-      boolean res=  count(29, 1);
+      boolean res=  count(5, 1);
       System.out.println("Result: "+res);
     }
 }
