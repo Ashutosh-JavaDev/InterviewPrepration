@@ -1,5 +1,7 @@
 package BasicQuestions;
+
 import java.util.Scanner;
+
 public class primeNumber {
     static boolean res = false;
     static int value = 0;
@@ -10,21 +12,25 @@ public class primeNumber {
         } else {
             if (num % i == 0) {
                 value++;
+                count(num, i + 1);
+
+            } else {
+                count(num, i + 1);
+
             }
-            count(num, i+1);
         }
-        if(value==2){
-            res=true;
+        if (value == 2) {
+            res = true;
+        } else {
+            res = false;
         }
-        else{
-            res=false;
-        }
-        System.out.println("Value: "+value);
+        System.out.println("Value: " + value);
         return res;
     }
+
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-      boolean res=  count(5, 1);
-      System.out.println("Result: "+res);
+        Scanner sc = new Scanner(System.in);
+        boolean res = count(11, 1);
+        System.out.println("Result: " + res);
     }
 }
