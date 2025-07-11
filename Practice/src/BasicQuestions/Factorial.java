@@ -12,4 +12,9 @@ public class Factorial {
         }
         return fact;
     }
+    public static void main(String[]args){
+        int num=5;
+        System.out.println(fact(num));
+    }
 }
+
