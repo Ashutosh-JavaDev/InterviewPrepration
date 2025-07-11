@@ -1,23 +1,21 @@
 package BasicQuestions;
 
 public class removeSpace {
+    static String st = "";
 
     public static String remove(String str) {
-        if (str.length() - 1 == 0) {
+        if (str.length() - 1 == -1) {
             return str;
         } else {
-            if (str.contains(" ")) {
-                str.trim();
+            if (str.charAt(str.length() - 1) == ' ') {
                 remove(str.substring(0, str.length() - 1));
-
-            }
-
-            else {
+            } else {
                 remove(str.substring(0, str.length() - 1));
+                st += str.charAt(str.length() - 1);
 
             }
         }
-        return str;
+        return st;
     }
 
     public static void main(String[] args) {
