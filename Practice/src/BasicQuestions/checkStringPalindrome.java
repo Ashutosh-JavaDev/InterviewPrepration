@@ -1,5 +1,5 @@
 package BasicQuestions;
-
+import java.util.Scanner;
 public class checkStringPalindrome {
     static boolean res = false;
     static String st = "";
@@ -20,7 +20,9 @@ public class checkStringPalindrome {
     }
 
     public static void main(String[] args) {
-        String str = "mAm";
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the String");
+        String str=sc.nextLine();
         boolean res = check(str);
         System.out.println(res);
     }
