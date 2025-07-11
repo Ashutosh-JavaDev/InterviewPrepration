@@ -20,7 +20,7 @@ public class checkStringPalindrome {
     }
 
     public static void main(String[] args) {
-        String str = "racecar";
+        String str = "mAm";
         boolean res = check(str);
         System.out.println(res);
     }
