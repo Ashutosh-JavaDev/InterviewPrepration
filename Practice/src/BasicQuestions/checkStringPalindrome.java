@@ -11,12 +11,17 @@ public class checkStringPalindrome {
             st+=str.charAt(str.length()-1);
             check(str.substring(0, str.length()-1));
         }
-        if(str.equals(st)){
+        if(str.equalsIgnoreCase(st)){
             res=true;
         }
         else{
             res=false;
         }
         return res;
+    }
+    public static void main(String[]args){
+        String str="racecar";
+        boolean res=check(str);
+        System.out.println(res);
     }
 }
