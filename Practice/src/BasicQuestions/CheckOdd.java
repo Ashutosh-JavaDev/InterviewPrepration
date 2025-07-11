@@ -1,5 +1,4 @@
 package BasicQuestions;
-import java.util.Scanner;
 import java.util.ArrayList;
 public class CheckOdd {
     static boolean res=false;
@@ -19,5 +18,9 @@ public class CheckOdd {
             }
         }
         return res;
+    }
+    public static void main(String[]args){
+        ArrayList<Integer>list=new ArrayList<>();
+        list.add(12);
     }
 }
