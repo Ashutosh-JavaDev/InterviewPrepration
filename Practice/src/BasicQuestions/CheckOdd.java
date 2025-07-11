@@ -27,7 +27,6 @@ public class CheckOdd {
         System.out.println(list.size());
         boolean res=check(list, list.size()-1);
         System.out.print(res);
-
         System.out.println();
 
     }
