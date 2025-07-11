@@ -26,8 +26,11 @@ public class minimumOccurence {
             return min;
     }
     public static void main(String[]args){
-        String str="RaRRRjaRam";
+        // String str="RaRRRjaRam";
+        int arr[]={21,233,12,312,1,32,42,3};
         // char ch=Pass(str);
         // System.out.println(ch);
+        int d=Pass(arr, arr.length);
+        System.out.println(d);
     }
 }
