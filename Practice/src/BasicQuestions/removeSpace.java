@@ -1,5 +1,5 @@
 package BasicQuestions;
 
-public class removeSoace {
+public class removeSpace {
     
 }
