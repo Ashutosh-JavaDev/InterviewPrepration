@@ -12,4 +12,9 @@ public class removeSpace {
         }
         return str;
     }
+    public static void main(String[]args){
+        String str="Jay Shree Ran";
+        String st=remove(str);
+        System.out.println(st);
+    }
 }
