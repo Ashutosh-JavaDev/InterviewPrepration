@@ -16,4 +16,9 @@ public class minimumOccurence {
         }
         return c;
     }
+    public static void main(String[]args){
+        String str="RajaRam";
+        char ch=Pass(str);
+        System.out.println(ch);
+    }
 }
