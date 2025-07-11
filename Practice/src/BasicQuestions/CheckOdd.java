@@ -1,7 +1,23 @@
 package BasicQuestions;
 import java.util.Scanner;
+import java.util.ArrayList;
 public class CheckOdd {
-    public static boolean check(int num[]){
-        // if(num>)
+    static boolean res=false;
+    static int count=0;
+    public static boolean check(ArrayList<Integer>list,int index){
+        if(index==0){
+            return res;
+        }
+        else{
+            if(list.get(list.size()-1)%2!=0){
+              res=true;
+                check(list,index-1);
+            }
+            else{
+                check(list, index-1);
+                return false;
+            }
+        }
+        return res;
     }
 }
