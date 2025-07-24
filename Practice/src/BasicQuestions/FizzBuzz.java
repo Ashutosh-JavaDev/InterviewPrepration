@@ -16,12 +16,13 @@ public class FizzBuzz {
                 list.add("Fizz");
             }
             else{
-                list.add(list.get(i));
+                list.add(Integer.toString(i));
             }
         }
         return list;
     }
     public static void main(String[] args) {
-        result(15);
+        ArrayList<String>res=result(15);
+        System.out.println(res);
     }
 }
